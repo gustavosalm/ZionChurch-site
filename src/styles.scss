@@ -480,7 +480,7 @@ body {
     }
 
     p {
-      bottom: calc(-65% - 3rem) !important;
+      bottom: calc(-65% - 4.25rem) !important;
       margin-left: 1rem;
     }
   }
@@ -489,6 +489,7 @@ body {
     position: absolute;
     bottom: -3em;
     left: 5%;
+    right: 5%;
     font: 500 1.75em/1.75em Montserrat;
     color: #585852;
   }
