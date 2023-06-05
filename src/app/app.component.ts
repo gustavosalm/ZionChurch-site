@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-zionSite';
+
+  openFaqCard(e: any) {
+    if(e.classList.contains('hidden')){
+      e.classList.remove('hidden');
+    }
+    else {
+      e.classList.add('hidden');
+    }
+  }
 }

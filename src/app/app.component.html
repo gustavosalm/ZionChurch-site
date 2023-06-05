@@ -2,8 +2,8 @@
   <div id="header">
     <ul>
       <li>Home</li>
-      <li>Sobre nós <img src="assets/Icons/DropdownArrow.png"></li>
-      <li>Conectar <img src="assets/Icons/DropdownArrow.png"></li>
+      <li>Sobre nós <div></div></li>
+      <li>Conectar <div></div></li>
       <li>Instituto Zao</li>
       <li>Contato</li>
       <li>OFERTAS</li>
@@ -66,7 +66,111 @@
     </div>
 
     <div class="FAQContainer">
-
+      <h1>FAQ</h1>
+      <ul class="faqList">
+        <li class="faqItem">
+          <button class="hidden" (click)="openFaqCard($event.target)">Onde e quando acontecerá a Conferência VDS 23?<div></div></button>
+          <div>
+            <p>A Conferência VDS acontecerá nos dias 25, 26 e 27 de agosto, na igreja Zion Recife, localizada na Av. Visconde de Jequitinhonha, 374 – Boa Viagem – Recife/PE.</p>
+          </div>
+        </li>
+        <li class="faqItem">
+          <button class="hidden" (click)="openFaqCard($event.target)">O que está incluso na minha inscrição?<div></div></button>
+          <div>
+            <p>O valor inclui uma entrada individual, que dá acesso a todos os dias do evento, e um kit conferencista.</p>
+          </div>
+        </li>
+        <li class="faqItem">
+          <button class="hidden" (click)="openFaqCard($event.target)">Como posso fazer a inscrição?<div></div></button>
+          <div>
+            <p>Você pode comprar sua inscrição através do site ou na mesa de informações em algum dos nossos cultos de domingo.</p>
+          </div>
+        </li>
+        <li class="faqItem">
+          <button class="hidden" (click)="openFaqCard($event.target)">A VDS 23 é aberta para outras igrejas?<div></div></button>
+          <div>
+            <p>Sim, as inscrições para a VDS 23 são abertas ao público. Não é restrita à Zion Church.</p>
+          </div>
+        </li>
+        <li class="faqItem">
+          <button class="hidden" (click)="openFaqCard($event.target)">Quais são as formas de pagamento?<div></div></button>
+          <div>
+            <p>Teremos duas formas de pagamento: por PIX ou por cartão de crédito/débito.</p>
+          </div>
+        </li>
+        <li class="faqItem">
+          <button class="hidden" (click)="openFaqCard($event.target)">Há a possibilidade de pedir reembolso?<div></div></button>
+          <div>
+            <p>Não, as entradas não são reembolsáveis.</p>
+          </div>
+        </li>
+        <li class="faqItem">
+          <button class="hidden" (click)="openFaqCard($event.target)">Crianças precisam pagar a inscrição?<div></div></button>
+          <div>
+            <p>Crianças a partir de 2 anos pagam o valor completo da inscrição. Crianças abaixo de 2 anos não pagam.</p>
+          </div>
+        </li>
+        <li class="faqItem">
+          <button class="hidden" (click)="openFaqCard($event.target)">Haverá um lugar específico para as crianças maiores de 2 anos ficarem?<div></div></button>
+          <div>
+            <p>Não, cada pai terá a responsabilidade de cuidar do seu filho.</p>
+          </div>
+        </li>
+        <li class="faqItem">
+          <button class="hidden" (click)="openFaqCard($event.target)">O berçário funcionará?<div></div></button>
+          <div>
+            <p>Sim, o berçário estará aberto. Mas, os pais serão responsáveis por cuidar dos seus bebês.</p>
+          </div>
+        </li>
+        <li class="faqItem">
+          <button class="hidden" (click)="openFaqCard($event.target)">Como encontro a minha inscrição?<div></div></button>
+          <div>
+            <p>Depois de se inscrever para o evento, você receberá um e-mail com a confirmação de sua compra e inscrição. Se por acaso você não encontrar esse e-mail, pode procurar por “e-inscrição” no spam ou no lixo eletrônico. Você também poderá encontrar a sua inscrição dentro da sua conta no site da E-inscrição (www.e-inscricao.com).<br>No dia do evento, você deverá trazer a sua entrada impressa ou de forma digital.</p>
+          </div>
+        </li>
+        <li class="faqItem">
+          <button class="hidden" (click)="openFaqCard($event.target)">Haverá estacionamento disponível?<div></div></button>
+          <div>
+            <p>A igreja Zion Recife não dispõe de estacionamento. Sugerimos estacionar no Mar Hotel ou no Hospital Nossa Senhora das Graças, o valor do estacionamento deles é cobrado pela sua administração, não tendo relação com a igreja. Também temos ruas ao redor da igreja, mas não garantimos a segurança e proteção do seu veículo.</p>
+          </div>
+        </li>
+        <li class="faqItem">
+          <button class="hidden" (click)="openFaqCard($event.target)">Como funcionará a parte de alimentação?<div></div></button>
+          <div>
+            <p>Nos três dias da conferência, funcionará o Ohana Café. Além disso, próximo à igreja,  há outras opções de restaurantes. Também há a opção do Shopping Recife, que se encontra à 2km da igreja.</p>
+          </div>
+        </li>
+        <li class="faqItem">
+          <button class="hidden" (click)="openFaqCard($event.target)">Não poderei ir mais à VDS 23. Posso transferir a minha inscrição para outra pessoa?<div></div></button>
+          <div>
+            <p>(AINDA NÃO TENHO ESSA RESPOSTA PQ ESSE SISTEMA É NOVO)</p>
+          </div>
+        </li>
+        <li class="faqItem">
+          <button class="hidden" (click)="openFaqCard($event.target)">Posso compartilhar a minha inscrição com outra pessoa entre as sessões ou por dia?<div></div></button>
+          <div>
+            <p>Não, a inscrição é individual e exclusiva para apenas uma pessoa durante todos os dias da VDS 23.</p>
+          </div>
+        </li>
+        <li class="faqItem">
+          <button class="hidden" (click)="openFaqCard($event.target)">O que devo levar para a VDS 23?<div></div></button>
+          <div>
+            <p>Para os dias do evento, recomendamos levar a sua inscrição, garrafa de água, bloco de notas e muita fome por mais de Deus.</p>
+          </div>
+        </li>
+        <li class="faqItem">
+          <button class="hidden" (click)="openFaqCard($event.target)">Devo apresentar a minha inscrição todos os dias da VDS 23?<div></div></button>
+          <div>
+            <p>Não. Apenas no primeiro dia que você for, após a apresentação e confirmação da sua inscrição, você receberá uma pulseira que deverá ser usada em todos os dias da conferência.</p>
+          </div>
+        </li>
+        <li class="faqItem">
+          <button class="hidden" (click)="openFaqCard($event.target)">Haverá livros ou roupas para vender?<div></div></button>
+          <div>
+            <p>Sim, teremos livros e algumas peças de roupas para vender no Shaba Store, que fica no hall de entrada da igreja.</p>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 
