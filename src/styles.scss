@@ -188,7 +188,7 @@ body {
   padding-top: 7.25rem;
   height: auto;
 
-  >img {
+  >img:not(.decoration) {
     float: left;
     width: 45%;
     transform: translateY(10%);
@@ -229,6 +229,19 @@ body {
     }
   }
 
+  .decoration {
+    position: absolute;
+    left: 0;
+    top: 1em;
+    width: 20%;
+
+    +.decoration {
+      right: 0;
+      top: -5em;
+      left: unset;
+    }
+  }
+
   @media screen and (max-width: 1800px) {
     div{
       font-size: .6rem;
@@ -244,7 +257,7 @@ body {
       width: 100%;
     }
 
-    >img {
+    >img:not(.decoration) {
       width: 100%;
       float: none;
       margin-bottom: 1rem;
@@ -253,11 +266,12 @@ body {
 }
 
 .Container3 {
+  position: relative;
   margin-top: 7.25rem;
   padding: 0 5.75rem;
   height: auto;
 
-  img {
+  img:not(.decoration) {
     width: 70%;
 
     &:first-child {
@@ -272,6 +286,19 @@ body {
 
   div {
     clear: both;
+  }
+
+  .decoration {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 35%;
+
+    +.decoration {
+      right: 0;
+      top: -10%;
+      left: unset;
+    }
   }
 
   @media screen and (max-width: 1000px) {
@@ -380,6 +407,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    z-index: 1;
 
     .leftMostCard {
       position: relative;
@@ -432,6 +460,14 @@ body {
       font: 500 2.125em/1.5em Montserrat;
       cursor: pointer;
     }
+  }
+
+  .decoration {
+    position: absolute;
+    left: 0;
+    top: -10%;
+    width: 15%;
+    z-index: 0;
   }
 
   @media screen and (max-width: 1800px) {
@@ -539,7 +575,7 @@ body {
           width: 1em;
           padding-bottom: 1em;
           transform: translateY(-50%);
-          background-image: url('assets/Icons/FAQDownArrow.png');
+          background-image: url('assets/Icons/FAQUpArrow.png');
           background-repeat: no-repeat;
           background-size: contain;
           background-position: top;
@@ -558,7 +594,7 @@ body {
       button.hidden {
 
         >div {
-          background-image: url('assets/Icons/FAQUpArrow.png');
+          background-image: url('assets/Icons/FAQDownArrow.png');
         }
 
         +div {
