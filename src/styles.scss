@@ -29,17 +29,67 @@ body {
     padding: 0;
 
     li {
-      font: 700 1.75em/1.75em Montserrat;
-      color: #fff;
+
+      a {
+        text-decoration: none;
+        font: 700 1.75em/1.75em Montserrat;
+        color: #fff;
+      }
+
+      button {
+        position: relative;
+        text-decoration: none;
+        font: 700 1.75em/1.75em Montserrat;
+        padding: 0;
+        color: #fff;
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
 
       img {
-        width: 12%;
+        position: absolute;
+        width: 25%;
+        right: -35%;
+        top: 50%;
+        transform: translateY(-50%);
+        content: url("assets/Icons/FAQUpArrow.png");
+
+        &.collapsed {
+          content: url("assets/Icons/FAQDownArrow.png");
+        }
       }
 
       &:last-child {
         border: 1px white solid;
         padding: 0 1.5em;
         border-radius: 50px;
+      }
+
+      .dropdownObj {
+        position: absolute;
+        padding-top: 1em;
+        transition: opacity .25s 0s;
+        opacity: 1;
+
+        p {
+          margin: 0;
+
+          a {
+            font-weight: 400;
+            line-height: 2.5em;
+          }
+        }
+
+        &.collapsed {
+          opacity: 0;
+          z-index: -10;
+
+          a {
+            pointer-events: none;
+            cursor: none;
+          }
+        }
       }
     }
   }
@@ -258,9 +308,10 @@ body {
     }
 
     >img:not(.decoration) {
-      width: 100%;
-      float: none;
-      margin-bottom: 1rem;
+      display: none;
+      // width: 100%;
+      // float: none;
+      // margin-bottom: 1rem;
     }
   }
 }
@@ -428,7 +479,7 @@ body {
       background-repeat: no-repeat;
       font-size: inherit;
 
-      button {
+      button, a {
         font: 500 1.75em/1.5em Montserrat;
         bottom: 3.5em;
       }
@@ -447,7 +498,9 @@ body {
       }
     }
 
-    button {
+    button, a {
+      text-decoration: none;
+      text-align: center;
       position: absolute;
       bottom: 1.5em;
       right: 2.875rem;
@@ -458,6 +511,7 @@ body {
       border: none;
       padding: 1em 0;
       font: 500 2.125em/1.5em Montserrat;
+      color: #000;
       cursor: pointer;
     }
   }
@@ -478,11 +532,12 @@ body {
     font-size: .4rem;
     margin-bottom: 65%;
 
-    >div button {
+    >div button, >div a {
       left: 0.875em !important;
       right: 0.875em !important;
       padding: .75em 0 !important;
       bottom: .75em;
+      font: 500 1.25em/1em Montserrat;
     }
 
     .middleCard button {

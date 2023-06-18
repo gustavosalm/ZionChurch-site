@@ -1,12 +1,24 @@
 <div id="pageContent">
   <div id="header">
     <ul>
-      <li>Home</li>
-      <li>Sobre nós <div></div></li>
-      <li>Conectar <div></div></li>
-      <li>Instituto Zao</li>
-      <li>Contato</li>
-      <li>OFERTAS</li>
+      <li><a href="https://zionrecife.org.br/">Home</a></li>
+      <li>
+        <button (click)="changeDropdownState(0)">Sobre nós <img class="dropdownArrowImg collapsed"></button>
+        <div class="dropdownObj collapsed">
+          <p><a href="https://zionrecife.org.br/quem-somos">Quem somos</a></p>
+          <p><a href="https://zionrecife.org.br/lideranca">Liderança</a></p>
+        </div>
+      </li>
+      <li>
+        <button (click)="changeDropdownState(1)">Conectar <img class="dropdownArrowImg collapsed"></button>
+        <div class="dropdownObj collapsed">
+          <p><a href="https://zionrecife.org.br/ministerios">Ministérios</a></p>
+          <p><a>Links</a></p>
+        </div>
+      </li>
+      <li><a href="https://zionrecife.org.br/zao">Instituto Zao</a></li>
+      <li><a href="https://zionrecife.org.br/contato">Contato</a></li>
+      <li><a href="https://zionrecife.org.br/ofertas">OFERTAS</a></li>
     </ul>
   </div>
 
@@ -54,7 +66,8 @@
     <div class="Container5">
       <div>
         <div class="leftMostCard">
-          <button>Comprar Ingresso</button>
+          <!-- <button onclick="location.href = 'www.e-inscricao.com/zionrecife/vds23'">Comprar Ingresso</button> -->
+          <a href="https://www.e-inscricao.com/zionrecife/vds23">Comprar Ingresso</a>
         </div>
         <div></div>
         <div class="middleCard">
