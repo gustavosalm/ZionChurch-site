@@ -408,6 +408,7 @@ body {
       color: #000;
       letter-spacing: 0.145em;
       cursor: pointer;
+      white-space: nowrap;
     }
   }
 
@@ -543,36 +544,42 @@ body {
       left: 0.875em !important;
       right: 0.875em !important;
       padding: .75em 0 !important;
-      font: 500 1.25em/1em Montserrat !important;
+      font: 500 1.75em/1em Montserrat !important;
     }
 
     .rightMostCard button, .rightMostCard a {
       bottom: 3em !important;
     }
 
-    // .rightMostCard {
-    //   flex-direction: row !important;
-    //   height: 65% !important;
-    //   padding: 0 1rem;
-    //   width: 100% !important;
-    //   img {
-    //     width: 45% !important;
-    //   }
-    // }
+    .rightMostCard {
+      height: 67.82% !important;
+      background-image: url("assets/Container5/RightMostCardCollapsed.png") !important;
+      top: 1em;
+      background-position: center;
+      width: calc(100% - 2rem) !important;
+      button, a {
+        opacity: 0;
+        width: 50%;
+      }
+    }
 
-    // padding-top: 55.6%;
+    padding-top: 55.6%;
+    margin-bottom: 50%;
 
-    // .leftMostCard {
-    //   width: 53.3% !important;
-    //   left: 1rem;
-    // }
-    // .middleCard {
-    //   width: 35.2% !important;
-    //   right: 1rem;
-    // }
+    .leftMostCard {
+      width: 53.3% !important;
+      left: 1rem;
+    }
+    .middleCard {
+      width: 35.2% !important;
+      right: 1rem;
+    }
 
     p {
+      margin-left: 1rem;
+      margin-right: 1rem;
       font-size: 1.6em !important;
+      bottom: calc(0px - 5.5em - 67.82%) !important;
     }
     // p {
     //   bottom: calc(0px - 5.5em) !important;
@@ -591,7 +598,6 @@ body {
     }
 
     p {
-      bottom: calc(0px - 5.5em) !important;
       float: none !important;
       display:inline-block;
       font-size: 2.25em !important;

@@ -34,4 +34,8 @@ export class AppComponent {
     this.states[ind] = !this.states[ind];
   }
 
+  replaceUrl(url: string){
+    window.location.replace(url);
+  }
+
 }
