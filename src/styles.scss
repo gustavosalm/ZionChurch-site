@@ -552,11 +552,12 @@ body {
     }
 
     .rightMostCard {
-      height: 67.82% !important;
+      height: 75% !important;
       background-image: url("assets/Container5/RightMostCardCollapsed.png") !important;
       top: 1em;
+      margin: 0 1rem;
       background-position: center;
-      width: calc(100% - 2rem) !important;
+      width: 100% !important;
       button, a {
         opacity: 0;
         width: 50%;
@@ -579,7 +580,7 @@ body {
       margin-left: 1rem;
       margin-right: 1rem;
       font-size: 1.6em !important;
-      bottom: calc(0px - 5.5em - 67.82%) !important;
+      bottom: calc(0px - 5.5em - 75%) !important;
     }
     // p {
     //   bottom: calc(0px - 5.5em) !important;
