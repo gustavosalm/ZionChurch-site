@@ -35,7 +35,7 @@ export class AppComponent {
   }
 
   replaceUrl(url: string){
-    window.location.replace(url);
+    window.open(url, '_blank')!.focus();
   }
 
 }
